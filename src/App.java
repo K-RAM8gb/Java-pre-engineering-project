@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class App {
-    public static class Person {
+class Person {
         Scanner sc = new Scanner(System.in);
         String name;
         private int Age;
@@ -36,7 +35,7 @@ public class App {
         }  
     }
 
-    public static class Student extends Person{
+class Student extends Person{
         private double Gread1, Gread2, Gread3;
 
         public void setGrade() {
@@ -83,6 +82,8 @@ public class App {
             System.out.printf("%-15s : Student is a %s%n", "Note", isMinor() ? "Minor" : "Major");
         }
     }
+
+public class App {
 
 
     public static void main(String[] args) throws Exception {
